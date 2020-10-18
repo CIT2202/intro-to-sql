@@ -3,7 +3,7 @@ Most useful websites store information in some way. To store or save data we use
 A database is simply a collection of data that is stored in a structured way. There a lots of different types of database e.g. NoSQL, Relational, Graph. We will be working with relational databases in this module.
 
 ## DBMS (Database Management System)
-* Software that manages the data in a database. We issue commands to a DBMS to perform actions such as creating new databases, adding data to a database, retrieving data from a database and deleting data from a database
+* A database Management System is simply software that manages the data in a database. We issue commands to a DBMS to perform actions such as creating new databases, adding data to a database, retrieving data from a database and deleting data from a database
 * The DBMS we will be using is **MySQL** (sometimes we use a version called **MariaDB** but it is essentially the same thing). There are other relation DBMS which are commonly used with PHP e.g. PostgreSQL.
 
 ## Key Relational Database Concepts
@@ -49,7 +49,7 @@ If we use two or more columns we call this a **composite** (or sometimes a **com
 
 This composite primary key would work okay for the above table, but if we add more rows eventually we are going to end up with two students with the same first and last names.  
 
-So what we can do is add another column to the table (called **id**). This isn't based on any data from the real word it exists simply to make an easy to use primary key. We call this a **surrogate** key e.g.
+So what we can do is add another column to the table. This isn't based on any data from the real word it exists simply to make an easy to use primary key. We call this a **surrogate** key e.g. we could add an **id** column.
 
 | id | last_name | first_name | course          | mark |
 |----|-----------|------------|-----------------|------|
@@ -89,4 +89,4 @@ This table stores information about different airports. Each airport has a uniqu
 | Lukaku     | Manchester United | 16    |
 
 This table stores footballers and how many goals they have scored for a particular team. We can't use *name* as the primary key (Ronaldo appears twice). *team* wouldn't be a good choice *Manchester United* appears twice. So in this table we could specify a composite primary key (**name** and **team**). The combination of these two attributes identifies the row.
-> Even this might not be future proof as eventually there are going to be two different players with the same name that have played for the same team.
+> Even this might not be future proof as eventually there are going to be two different players with the same name that have played for the same team. So we would probably use a surrogate key.
