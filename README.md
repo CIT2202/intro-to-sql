@@ -1,5 +1,5 @@
 # Introduction to MySQL
-This practical work is about developing skills in SQL.
+This practical work is about developing skills in SQL. Make sure you have has a look at the notes on key database concepts [Intro to Databases](intro-to-databases.md) and SQL [Intro to SQL](intro-to-sql.md) before attempting the following.
 
 ## Accessing MySQL
 MySQL is part of XAMPP/MAMP/WAMP. To complete these exercises you will need Apache to be running and MySQL (check your control panel).
