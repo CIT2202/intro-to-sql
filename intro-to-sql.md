@@ -105,7 +105,7 @@ SELECT DISTINCT course FROM students;
 Note that IT only appears once in the results.
 
 ### WHERE
-We can choose to retrieve specific rows using a WHERE clause e.g. I want to know the names of all the students on the IT course.
+We can choose to retrieve specific rows using a WHERE clause e.g. If I want to know the names of all the students on the IT course.
 ```sql
 SELECT * FROM students WHERE course = "IT";
 ```
