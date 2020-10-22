@@ -37,7 +37,7 @@
   * List all the films except for 'Mean Girls' and 'Get Out' that have a title that contains the letter 'g'
 
   ```
-  SELECT * FROM films WHERE title LIKE '%g%' AND title NOT IN("Mean Girls","The Thing");
+  SELECT * FROM films WHERE title LIKE '%g%' AND title NOT IN("Mean Girls","Get Out");
   ```
 
   * List the three shortest films
