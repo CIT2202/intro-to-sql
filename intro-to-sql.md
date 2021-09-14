@@ -181,10 +181,10 @@ SELECT * FROM students WHERE course IN ("IT", "Computing");
 There is also a NOT IN which can be used to exclude rows from the results.
 
 #### AND and OR
-We can use the AND and OR operators to perform two or more tests in a single statement e.g. if we wanted to know the details of all the ICT students with a mark over 50.
+We can use the AND and OR operators to perform two or more tests in a single statement e.g. if we wanted to know the details of all the IT students with a mark over 50.
 
 ```sql
-SELECT last_name, first_name FROM students WHERE course = "ICT" AND mark >50;
+SELECT last_name, first_name FROM students WHERE course = "IT" AND mark >50;
 ```
 | last_name | first_name |
 |-----------|------------|
