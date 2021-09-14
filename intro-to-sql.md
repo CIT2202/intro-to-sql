@@ -275,7 +275,7 @@ LIMIT 1
 | 4  | Laxman    | Sunil      | Web Programming | 52   |
 
 ## Updating Records
-Using the UPDATE statement we can change the value of the a field e.g.
+Using the UPDATE statement we can change the value of a field e.g.
 ```sql
 UPDATE students SET course= 'IT' WHERE id = 4
 ```
