@@ -60,39 +60,23 @@ SELECT * FROM films WHERE title="Inception"
 ```
 * Click 'go'. You should see the results of the query.
 
-* Write SELECT statements that will do the following:
+* Write SELECT statements that will do the following (refer to the notes [Intro to SQL](intro-to-sql.md) to help you):
   * List all the films that were made in 2004
-
   * List all the films  with a duration of 100 minutes or greater
-
   * List these films in order, from the longest to the shortest
-
   * List all the films that have a title that contains the word 'the'
-
   * List all the films that have a title that starts with the word 'the'
-
   * List all the films that have a title that contains the word 'the' that weren't made in 2004
-
   * List all the films except for 'Mean Girls' and 'Get Out' that have a title that contains the letter 'g'
-
   * List the three shortest films
-
   * List the 4th and 5th oldest films
-
   * List the total duration of all the films in the table
-
   * List all the different years (no duplicates) in the table
-
   * Display the number of films in the table
-
   * Display the average duration of all the films in the database
-
   * Display the average duration of all the films made in the 21st century
-
   * List each year and the number of films made in that year
-
   * List each year. For each year, display the average duration of all the films made in that year, order the results in ascending order
-
   * Modify the above by rounding the duration of each film to the nearest minute (you might have to do some extra research)
     
 
