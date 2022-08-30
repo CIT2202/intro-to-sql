@@ -26,6 +26,8 @@ A database is simply a collection of data that is stored in a structured way. Th
 * Each **row** or **record** in the table stores information for a specific item, in this example a specific student.
 * A specific cell in a table is called a **field** e.g. the *last_name* field for the first row in the table has a value of *Compton*. A **field** should only ever contain a single value. This can be text, a number, a date etc. but never multiple values.
 
+> This table, like most of the tables in these notes, has several design flaws. This is mainly becuase we are only considering simple databases made up of single tables. Later on we will look at databases that feautre multiple tables that can address these design flaws. 
+
 ## Primary Keys
 There are key actions that we want to perform on a database table, often these are described using the acronym CRUD.
 * C - Create, insert a new row into a table.
