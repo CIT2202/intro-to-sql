@@ -83,10 +83,11 @@ This table stores information about different airports. Each airport has a uniqu
 
 | name | team              | goals |
 |------------|-------------------|-------|
-| Ronaldo    | Manchester United | 118   |
-| Bale       | Tottenham         | 42    |
-| Ronaldo    | Real Madrid       | 451   |
-| Lukaku     | Manchester United | 16    |
+| Rooney    | Manchester United | 183   |
+| Gerard       | Liverpool         | 120    |
+| Rooney    | Everton       | 25  |
+| Agüero     | Manchester City | 184   |
+| Scholes     | Manchester United | 107   |
 
-This table stores footballers and how many goals they have scored for a particular team. We can't use *name* as the primary key (Ronaldo appears twice). *team* wouldn't be a good choice *Manchester United* appears twice. So in this table we could specify a composite primary key (**name** and **team**). The combination of these two attributes identifies the row.
+This table stores footballers and how many goals they have scored for a particular team. We can't use *name* as the primary key (Rooney appears twice). *team* wouldn't be a good choice *Manchester United* appears twice. So in this table we could specify a composite primary key (**name** and **team**). The combination of these two attributes identifies the row.
 > Even this might not be future proof as eventually there are going to be two different players with the same name that have played for the same team. So we would probably use a surrogate key.
