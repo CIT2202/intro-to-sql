@@ -1,7 +1,7 @@
 # Introduction to MySQL
 This practical work is about developing skills in SQL. Make sure you have had a look at the notes on key database concepts [Intro to Databases](intro-to-databases.md) and SQL [Intro to SQL](intro-to-sql.md) before attempting the following.
 
-## Accessing MySQL (Do this if you are using XAMPP and then go onto *Creating some Tables*)
+## If you are using XAMPP 
 MySQL is part of XAMPP/MAMP/WAMP. To complete these exercises you will need Apache to be running and MySQL (check your control panel).
 
 * In a web browser enter http://localhost/phpmyadmin/ and you will be taken to the login page for phpMyAdmin. It should also be available as a link from your localhost homepage.
@@ -25,10 +25,14 @@ It's a good idea to set up a database where you can do all your work for the mod
 A database named cit2202 should appear on the left-hand side.
 * Select this database. At the moment it will tell you 'No tables found'
 
-## Accessing MySQL (Do this if you are using selene and then go onto *Creating some Tables*)
+Now go onto *Creating some Tables* below.
+
+## If you are using selene
 In a browser go to https://selene.hud.ac.uk/phpmyadmin/ . 
 * The username and password are the same as the ones you have been using with FileZilla. 
 * You will already have a database named after your student number set-up for you. It is on the left-hand side menu. Select this database. 
+
+Now go on to creating some tables below.
 
 ## Creating some Tables
 Next, you need to import a table to use for this practical work.
