@@ -18,7 +18,7 @@ It's a good idea to set up a database where you can do all your work for the mod
 * Select 'Add user account' and then enter the following details:
     * Username:cit2202
     * Host name: select 'Local'. It should fill the second field with 'localhost'.
-    * Enter a password
+    * Enter a password (and remember it!)
     * Scroll down a bit and select the checkbox that says *'Create database with same name and grant all privileges.'*
     * Scroll down to the bottom of the page and select 'Go'.
 
