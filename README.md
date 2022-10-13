@@ -5,7 +5,7 @@ This practical work is about developing skills in SQL. Make sure you have had a 
 MySQL is part of XAMPP/MAMP/WAMP. To complete these exercises you will need Apache to be running and MySQL (check your control panel).
 
 * In a web browser enter http://localhost/phpmyadmin/ and you will be taken to the login page for phpMyAdmin. It should also be available as a link from your localhost homepage.
-* You need to login as the administrator of MySQL.
+* You may need to login as the administrator of MySQL.
     * On XAMPP/WAMP the username is *root* and the password is blank i.e. you don't enter anything.
     * On MAMP, I think the username is *root* and the password is *root*. Google it if it doesn't work.  
 
