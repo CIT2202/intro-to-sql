@@ -72,7 +72,7 @@ SELECT * FROM films WHERE title="Inception"
   * List all the films that have a title that starts with the word 'the'
   * List all the films that have a title that contains the word 'the' that weren't made in 2004
   * List all the films except for 'Mean Girls' and 'Get Out' that have a title that contains the letter 'g'
-  * List the three shortest films
+  * List the three shortest (in terms of duration) films
   * List the 4th and 5th oldest films
   * List the total duration of all the films in the table
   * List all the different years (no duplicates) in the table
