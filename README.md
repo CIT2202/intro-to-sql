@@ -11,7 +11,7 @@ MySQL is part of XAMPP/MAMP/WAMP. To complete these exercises you will need Apac
 
 You should then be taken to the admin home screen with a list of databases down the left-hand side.
 
-### Setting up a Database
+### Setting up a database
 It's a good idea to set up a database where you can do all your work for the module. You will also need to set up a user with access to this database.
 
 * From the navigation bar along the top select 'User accounts'.
@@ -25,7 +25,7 @@ It's a good idea to set up a database where you can do all your work for the mod
 A database named cit2202 should appear on the left-hand side.
 * Select this database. At the moment it will tell you 'No tables found'
 
-Now go onto *Creating some Tables* below.
+Now go onto *Creating some tables* below.
 
 ## If you are using selene
 In a browser go to https://selene.hud.ac.uk/phpmyadmin/ . 
@@ -34,7 +34,7 @@ In a browser go to https://selene.hud.ac.uk/phpmyadmin/ .
 
 Now go on to creating some tables below.
 
-## Creating some Tables
+## Creating some tables
 Next, you need to import a table to use for this practical work.
 * In phpMyAdmin from the navigation bar at the top select 'SQL'
 * From GitHub select the file [films.sql](films.sql). This file contains some SQL commands that will create a database table and then insert some data into it.
@@ -44,7 +44,7 @@ Next, you need to import a table to use for this practical work.
 * Now if you select the database again you should see you have a *films* table
 * Select this *films* table and it should allow you to browse the data in this table.
 
-## Inserting More Data
+## Inserting more data
 Select the SQL tab. This allows us to enter SQL commands and execute them.
 
 * Paste in the following:
@@ -55,7 +55,7 @@ INSERT INTO films (id, title, year, duration) VALUES (NULL, 'Parasite', 2019, 13
 * Click on the SQL tab.
 * Write your own INSERT statement to add another film to the table.
 
-## Selecting Data
+## Selecting data
 
 * Select the SQL tab, enter the following
 
@@ -84,6 +84,6 @@ SELECT * FROM films WHERE title="Inception"
   * Modify the above by rounding the duration of each film to the nearest minute (you might have to do some extra research)
     
 
-## Deleting Data
+## Deleting data
 * Select the SQL tab
 * Write an SQL statement to delete a film from the database table.
