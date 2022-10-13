@@ -67,7 +67,7 @@ SELECT * FROM films WHERE title="Inception"
 * Write SELECT statements that will do the following (refer to the notes [Intro to SQL](intro-to-sql.md) to help you):
   * List all the films that were made in 2004
   * List all the films  with a duration of 100 minutes or greater
-  * List these films in order, from the longest to the shortest
+  * List these films in order, from the longest duration to the shortest
   * List all the films that have a title that contains the word 'the'
   * List all the films that have a title that starts with the word 'the'
   * List all the films that have a title that contains the word 'the' that weren't made in 2004
