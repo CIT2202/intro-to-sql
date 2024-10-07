@@ -11,7 +11,7 @@ MySQL is part of XAMPP/MAMP/WAMP. To complete these exercises you will need Apac
 
 You should then be taken to the admin home screen with a list of databases down the left-hand side.
 
-### Setting up a database
+## Setting up a database
 It's a good idea to set up a database where you can do all your work for the module. You will also need to set up a user with access to this database.
 
 * From the navigation bar along the top select 'User accounts'.
