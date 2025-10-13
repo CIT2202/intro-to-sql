@@ -35,7 +35,7 @@ It's a good idea to set up a database where you can do all your work for the mod
 
 * From the navigation bar along the top select 'User accounts'.
 * Select 'Add user account' and then enter the following details:
-    * Username:cit2202
+    * Username: cit2202
     * Host name: select 'Local'. It should fill the second field with 'localhost'.
     * Enter a password (and remember it!)
     * Scroll down a bit and select the checkbox that says *'Create database with same name and grant all privileges.'*
@@ -45,7 +45,7 @@ A database named cit2202 should appear on the left-hand side.
 * Select this database. At the moment it will tell you 'No tables found'
 
 ## Completing the practical work <a name="practical"></a>
-Select 'SQL Command' and enter the following SQL
+Select 'SQL' and enter the following SQL:
 
 ```sql
 CREATE TABLE films (
