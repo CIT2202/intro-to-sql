@@ -57,7 +57,7 @@ CREATE TABLE films (
 )
 ```
 
-Then click 'Execute'.
+Then click 'Go/Execute'.
 This SQL command creates a new table.
 Next, we'll populate the table with some sample data. Enter the following SQL:
 
@@ -80,7 +80,7 @@ INSERT INTO `films` (`id`, `title`, `year`, `duration`) VALUES
 (NULL, 'Get Out', 2017, 117);
 ```
 
-- Hit 'Execute'
+- Hit 'Go/Execute'
 - Select the database and then select the films table and confirm you can see the films table.
 
 ### Inserting more data
@@ -89,12 +89,12 @@ Select the SQL navigation option.
 
 ## Selecting data
 
-* Select the SQL  navigation option, enter the following:-
+* Select the SQL navigation option, enter the following:-
 
 ```SQL
 SELECT * FROM films WHERE title="Inception"
 ```
-* Click 'go'. You should see the results of the query.
+* Click 'Go/Execute'. You should see the results of the query.
 
 * Write SELECT statements that will do the following (refer to the notes [Intro to SQL](intro-to-sql.md) to help you):
   * List all the films that were made in 2004
