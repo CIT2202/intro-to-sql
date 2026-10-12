@@ -37,6 +37,7 @@ INSERT INTO films (id, title, year, duration) VALUES
 (NULL, 'Toy Story', 1995, 77),
 ```
 Check you can view this data in the table.
+
 Write your own `INSERT` statement to add another film to the table.
 
 Next, we'll populate the table with some additional sample data. Enter the following SQL:
