@@ -20,7 +20,7 @@ This will give you access to a database called **webdev**.
 
 ## Creating a Table
 
-Select 'SQL Command' and enter attempt the following:
+Select 'SQL Command' and attempt the following:
 
 Write a `CREATE TABLE` statement for a `films` table. The table will need the following columns:-
 - `id`. This will be the primary key and should be set to auto increment.
