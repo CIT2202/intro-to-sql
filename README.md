@@ -68,7 +68,7 @@ INSERT INTO films (id, title, year, duration) VALUES
 ## Selecting data
 
 ```SQL
-SELECT * FROM films WHERE title="Inception"
+SELECT title, year FROM films WHERE title="Inception"
 ```
 * Click 'Go/Execute'. You should see the results of the query.
 
