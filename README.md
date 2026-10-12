@@ -1,68 +1,49 @@
 # Introduction to MySQL
 This practical work is about developing skills in SQL. Make sure you have had a look at the notes on key database concepts [Intro to Databases](intro-to-databases.md) and SQL [Intro to SQL](intro-to-sql.md) before attempting the following.
 
-- [Follow these instructions if you are using Codespaces](#codespaces)
-- [Follow these instruction if you are using XAMPP](#xampp)
+## Setting up the database
 
-## If you are using Codespaces <a name="codespaces"></a>
-The codespace has a database installed. It also has a database management tool installed called Adminer.
+Open your existing codespace (DON'T CREATE A NEW ONE) [https://github.com/codespaces](https://github.com/codespaces).
 
-- Select the 'ports' tab (next to terminal).
-- Hover over the Forwarded port for 8081 and click 'Open in Browser'
-- A new tab should open for Adminer.
+Your codespace already has a database installed (MariaDB). It also has a database management tool installed called Adminer.
+
+Select the 'ports' tab (next to terminal).
+Hover over the forwarded port for 8080 and click 'Open in Browser'
+A new tab should open for Adminer.
 
 To log into Adminer enter the following:-
-- username: **root**
+- username: **student**
 - password: **secret**
-- database: **cht2520**
+- database: **webdev**
 
-This will give you access to a database called **cht2520**.
+This will give you access to a database called **webdev**.
 
-Now move onto [Completing the practical work](#practical)
+## Creating a Table
 
-## If you are using XAMPP <a name="xampp"></a>
-MySQL is part of XAMPP/MAMP/WAMP. To complete these exercises you will need Apache to be running and MySQL (check your control panel).
+Select 'SQL Command' and enter attempt the following:
 
-* In a web browser enter http://localhost/phpmyadmin/ and you will be taken to the login page for phpMyAdmin. It should also be available as a link from your localhost homepage.
-* You may need to login as the administrator of MySQL.
-    * On XAMPP/WAMP the username is *root* and the password is blank i.e. you don't enter anything.
-    * On MAMP, I think the username is *root* and the password is *root*. Google it if it doesn't work.  
+Write a `CREATE TABLE` statement for a `films` table. The table will need the following columns:-
+- `id`. This will be the primary key and should be set to auto increment.
+- `title`. This will store the title of a film e.g. 'Toy Story'
+- `year`. This will store the year the film was released e.g. 1995
+- `duration`. This will store the duration of the film in minutes e.g. 77
 
-You should then be taken to the admin home screen with a list of databases down the left-hand side.
+Add suitable constraints e.g. duration must be greater than 0. 
 
-### Setting up a database
-It's a good idea to set up a database where you can do all your work for the module. You will also need to set up a user with access to this database.
-
-* From the navigation bar along the top select 'User accounts'.
-* Select 'Add user account' and then enter the following details:
-    * Username: cit2202
-    * Host name: select 'Local'. It should fill the second field with 'localhost'.
-    * Enter a password (and remember it!)
-    * Scroll down a bit and select the checkbox that says *'Create database with same name and grant all privileges.'*
-    * Scroll down to the bottom of the page and select 'Go'.
-
-A database named cit2202 should appear on the left-hand side.
-* Select this database. At the moment it will tell you 'No tables found'
-
-## Completing the practical work <a name="practical"></a>
-Select 'SQL' and enter the following SQL:
+To test is this works try and run the following `INSERT` statement.
 
 ```sql
-CREATE TABLE films (
-  id int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
-  title varchar(100) NOT NULL,
-  year smallint(6) NOT NULL,
-  duration smallint(6) NOT NULL,
-  CONSTRAINT PRIMARY KEY (id)
-)
+INSERT INTO films (id, title, year, duration) VALUES
+(NULL, 'Toy Story', 1995, 77),
 ```
+Check you can view this data in the table.
+Write your own `INSERT` statement to add another film to the table.
 
-Then click 'Go/Execute'.
-This SQL command creates a new table.
-Next, we'll populate the table with some sample data. Enter the following SQL:
+Next, we'll populate the table with some additional sample data. Enter the following SQL:
 
 ```sql
-INSERT INTO `films` (`id`, `title`, `year`, `duration`) VALUES
+INSERT INTO films (id, title, year, duration) VALUES
+(NULL, 'Jaws', 1975, 124),
 (NULL, 'Winter\'s Bone', 2010, 100),
 (NULL, 'Do The Right Thing', 1989, 120),
 (NULL, 'The Incredibles', 2004, 115),
@@ -80,16 +61,10 @@ INSERT INTO `films` (`id`, `title`, `year`, `duration`) VALUES
 (NULL, 'Get Out', 2017, 117);
 ```
 
-- Hit 'Go/Execute'
-- Select the database and then select the films table and confirm you can see the films table.
+- Check this has worked by selecting the films tables and then 'view data'.
 
-### Inserting more data
-Select the SQL navigation option.
--  Write your own INSERT statement to add another film to the table.
 
 ## Selecting data
-
-* Select the SQL navigation option, enter the following:-
 
 ```SQL
 SELECT * FROM films WHERE title="Inception"
