@@ -7,20 +7,42 @@ We can issues these commands in a number of different ways e.g.
 * Using a command line interface.
 * Using a web interface (e.g. phpmyadmin/adminer)
 
-There are SQL commands for creating databases and tables. We are going to skip these. This module isn't about designing or creating databases. It is about working with a database using PHP so we are interested in the basic CRUD operations (Create, Read, Update, Delete) on a table.
+## Creating Tables `CREATE TABLE`
 
-Consider the following table:
+|**id**| **last_name** | **first_name** | **course** | **mark** |
+|--|-----------|------------|---------|------|
+|1| Compton | Jane | IT | 58 |
+|2| Atherton | Ian | Computing in Business | 32 |
+|3| Hutton | Kate | Web Design | 72 |
+|4| Miandad | Yousef | IT | 61 |
+|5| Laxman | Sunil | Web Programming | 52 |
+|6| Crowe | Grace | Computing | 70 |
+|7| Hutton | Marcus | Web Design | 42 |
 
-**students**
 
-| id | last_name | first_name | course          | mark |
-|----|-----------|------------|-----------------|------|
-|   |    |        |               |    |
-|   |   |         |               |    |
-|   |     |        |        |    |
-|   |     |       |   |    |
-|   |      |       |        |    |
+- To create a table like this in SQL we use the `CREATE TABLE` statement:-
 
+```sql
+CREATE TABLE students (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    last_name VARCHAR(255) NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    course VARCHAR(255) NOT NULL,
+    mark TINYINT UNSIGNED NOT NULL,
+    PRIMARY KEY (id),
+    CONSTRAINT mark CHECK (mark BETWEEN 0 AND 100)
+);
+```
+- `CREATE` and `TABLE` are keywords from the language that declare we want to create a table (`students`). 
+- In parentheses, separated by a commas, we specify the columns. 
+  - Each column has a name that we invent and the type of data that can be stored.
+- `id` will store integers (`INT`). `UNSIGNED` means positive integers only. 
+  - `AUTO_INCREMENT` means the database will generate the ID number for us when we insert a row.
+- `first_name`, `last_name` and `course` will all store text data. `VARCHAR` specifies variable length text and the 255 specifies the maximum number of characters.
+- The final column `mark` is going to store a number, the student's score, so we specify `TINYINT`, a small integer.
+- We specify the `id` column as being the primary key (`PRIMARY KEY (id)`)
+- We add a constraint (`CHECK (mark BETWEEN 0 AND 100)`) to prevent an invalid mark being entered.
+- `NOT NULL` simple means we must enter a value for these fields. 
 
 ## Inserting Data
 Running the following SQL statement
