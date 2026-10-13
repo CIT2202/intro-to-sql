@@ -18,7 +18,7 @@ To log into Adminer enter the following:-
 
 This will give you access to a database called **webdev**.
 
-## Creating a Table
+## Creating a Table and Inserting Data
 
 Select 'SQL Command' and attempt the following:
 
@@ -30,11 +30,13 @@ Write a `CREATE TABLE` statement for a `films` table. The table will need the fo
 
 Add suitable constraints e.g. duration must be greater than 0. 
 
-To test is this works try and run the following `INSERT` statement.
+Click on execute to run the SQL code. 
+
+Next, run the following `INSERT` statement.
 
 ```sql
 INSERT INTO films (id, title, year, duration) VALUES
-(NULL, 'Toy Story', 1995, 77),
+(NULL, 'Toy Story', 1995, 77);
 ```
 Check you can view this data in the table.
 
