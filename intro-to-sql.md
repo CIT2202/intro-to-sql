@@ -112,6 +112,11 @@ SELECT * FROM students;
 | 4  | Laxman    | Sunil      | Web Programming | 52   |
 | 5 | Crowe     | Grace      | Computing       | 70   |
 
+- We use `*` here for demonstration purposes.
+- We should never use it in production. 
+  - It's best practice to be explicit about which columns we want to return.
+- It can be useful when trying to debug or understand what a query is doing.
+
 ### DISTINCT
 We can use the DISTINCT key word to remove duplicates from the results
 ```sql
@@ -226,9 +231,7 @@ SELECT * FROM students ORDER BY mark DESC
 | 4  | Laxman    | Sunil      | Web Programming | 52   |
 | 2  | Atherton  | Ian        | IT              | 32   |
 
-- We use `*` for demonstration purposes (it selects all columns)
-- We should never use it in production. 
-  - It's best practice to be explicit about which columns we want to return.
+
 
 ### LIMIT and OFFSET
 We can limit the number of results returned e.g.
