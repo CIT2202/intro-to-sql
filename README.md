@@ -8,7 +8,7 @@ Open your existing codespace (DON'T CREATE A NEW ONE) [https://github.com/codesp
 Your codespace already has a database installed (MariaDB). It also has a database management tool installed called Adminer.
 
 Select the 'ports' tab (next to terminal).
-Hover over the forwarded port for 8080 and click 'Open in Browser'
+Hover over the forwarded port for 8081 and click 'Open in Browser'
 A new tab should open for Adminer.
 
 To log into Adminer enter the following:-
