@@ -226,6 +226,10 @@ SELECT * FROM students ORDER BY mark DESC
 | 4  | Laxman    | Sunil      | Web Programming | 52   |
 | 2  | Atherton  | Ian        | IT              | 32   |
 
+- We use `*` for demonstration purposes (it selects all columns)
+- We should never use it in production. 
+  - It's best practice to be explicit about which columns we want to return.
+
 ### LIMIT and OFFSET
 We can limit the number of results returned e.g.
 ```sql
